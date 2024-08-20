@@ -1,0 +1,260 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-image: url(../assets/img/encabezadoGodOfWar.png);
+    padding: 10px 20px;
+}
+
+.logoTitulo {
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+    align-items: center;
+}
+
+.logo img {
+    height: 70px;
+    margin-right: 10px;
+}
+
+h1 {
+    color: red;
+    font-family: "GFS Neohellenic", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 3em;
+    margin: 0;
+}
+
+nav {
+    flex-grow: 1; /* definimos si un elemento tiene prioridad para aumentar su tamaño en caso de que sobre espacio 
+    de contenedor */
+}
+
+nav, ul {
+    list-style: none;
+    font-family: "GFS Neohellenic", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 1.1em;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+nav, ul, li{
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: red;
+    text-decoration: none;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+nav, ul, li, a:hover {
+    color: #fb9851;
+    border-radius: 4px;
+
+}
+
+body {
+    background-color: #000000;
+    background-size: cover;
+    background-position: center;
+    background-position: no-repeat;
+    background-attachment: fixed;
+}
+
+section {
+    color: white;
+    font-family: "GFS Neohellenic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 10px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.tituloGaleria {
+    display: flex;
+    justify-content: center;
+    color: rgb(122, 0, 0);
+    margin: 20px;
+}
+
+.divTrailers {
+    display: flex;
+    justify-content: center;
+}
+
+.trailers {
+    display: flex;
+    justify-content: center;
+    width: 719.4px;
+    height: 404.66px;
+}
+
+iframe {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.bordesGaleria {
+    border-style: groove;
+    border-color: #000000;
+    padding: 20px;
+}
+
+.h3-galeria{
+    margin: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.divFooter {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footerSection {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footerSection h4 {
+    margin-bottom: 10px;
+}
+
+.footerSection a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.footerSection p {
+    margin: 5px 0;
+}
+
+.tituloInicio {
+    display: flex;
+    justify-content: center;
+}
+
+.gridArea {
+    display: grid;
+    grid-template-areas: 
+        "intro intro-img"
+        "about-img about"
+        "conclusion conclusion-img";
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.grid-container div {
+    padding: 10px;
+}
+
+.intro {
+    grid-area: intro;
+}
+
+.intro-img {
+    grid-area: intro-img;
+    text-align: center;
+}
+
+.about {
+    grid-area: about;
+}
+
+.about-img {
+    grid-area: about-img;
+    text-align: center;
+}
+
+.conclusion {
+    grid-area: conclusion;
+}
+
+.conclusion-img {
+    grid-area: conclusion-img;
+    text-align: center;
+}
+
+.gridArea img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.gridArea p {
+    margin-top: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+        padding: 10px;
+    }
+    nav, ul, li {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+    header {
+        background-image: none;
+        background-color: #1b1b1b;
+        padding: 0;
+    } 
+    .logoTitulo {
+        margin: 0;
+    }
+    .gridArea {
+        display: grid;
+        grid-template-areas: 
+            "intro" 
+            "intro-img"
+            "about"
+            "about-img"        
+            "conclusion"
+            "conclusion-img";
+    }
+    iframe {
+        width: "360";
+        height: "120";
+    }
+}
+.contenedorCarousel{
+    display: flex;
+    justify-content: center;
+}
