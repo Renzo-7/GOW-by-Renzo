@@ -39,12 +39,15 @@ h1 {
     margin: 0;
 }
 
-nav {
-    flex-grow: 1; /* definimos si un elemento tiene prioridad para aumentar su tamaño en caso de que sobre espacio 
-    de contenedor */
+.nav_changes {
+    flex-grow: 1; 
 }
 
-nav, ul {
+ul {
+    display: contents !important;
+}
+
+.nav_changes, .ul_changes {
     list-style: none;
     font-family: "GFS Neohellenic", sans-serif;
     font-weight: 700;
@@ -55,21 +58,29 @@ nav, ul {
     flex-direction: row;
 }
 
-nav, ul, li{
-    margin: 0 15px;
+.nav_changes, .ul_changes, .li_changes{
+    margin: 0 15px; 
 }
 
-nav ul li a {
+.nav_changes, .ul_changes, .li_changes, .a_changes {
     color: red;
     text-decoration: none;
     display: block;
     transition: color 0.3s ease;
 }
 
-nav, ul, li, a:hover {
+.nav_changes, .ul_changes, .li_changes, .a_changes:hover {
     color: #fb9851;
-    border-radius: 4px;
+    border-radius: 4px; 
+}
 
+.navbar a:focus,
+.navbar a:active{
+    color: #fb9851;
+}
+
+.navbar-toggler{
+    background-color: red;
 }
 
 body {
@@ -222,11 +233,11 @@ footer {
         font-size: 14px;
         padding: 10px;
     }
-    nav, ul, li {
-        display: flex;
-        flex-direction: column;
-        margin: 0;
+
+    .nav_changes, .ul_changes, .li_changes{
+        margin: 0; 
     }
+
     img {
         width: 100%;
         height: auto;
