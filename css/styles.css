@@ -281,10 +281,14 @@ footer {
     margin: 20px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 599px) and (min-width: 320px) {
+
+    html {
+        width: fit-content;
+    }
+    
     body {
         font-size: 14px;
-        padding: 10px;
     }
 
     .nav_changes, .ul_changes, .li_changes{
@@ -329,7 +333,59 @@ footer {
         height: 150px;
     }
 }
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    
+    body {
+        font-size: 14px;
+    }
+    
+    header {
+        background-image: none;
+        background-color: #1b1b1b;
+        padding: 0;
+    }
+
+    .navbar .container-fluid {
+        justify-content: flex-end;
+    }
+
+    .navbar-collapse{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-end;
+    }
+
+    .bloque {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .imgHistoria {
+        margin-bottom: 15px;
+    }
+
+    .trailers {
+        width: 570px;
+        height: 320px;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1024px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        background-image: url(../assets/img/encabezadoGodOfWar-1024.png);
+    }
+}
+
 .contenedorCarousel{
     display: flex;
     justify-content: center;
 }
+
+/*# sourceMappingURL=styles.css.map */
