@@ -1,0 +1,394 @@
+$colorprimario: red;
+$colorsecundario: black;
+$colorterciario: #fb9851;
+$mifuente: "GFS Neohellenic", sans-serif;
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-image: url(../assets/img/encabezadoGodOfWar.png);
+    padding: 10px 20px;
+}
+
+.logoTitulo {
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+    align-items: center;
+}
+
+.logo img {
+    height: 70px;
+    margin-right: 10px;
+}
+
+h1 {
+    color: $colorprimario;
+    font-family: $mifuente;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 3em;
+    margin: 0;
+}
+
+.nav_changes {
+    flex-grow: 1; 
+}
+
+ul {
+    display: contents !important;
+}
+
+.nav_changes, .ul_changes {
+    list-style: none;
+    font-family: $mifuente;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 1.1em;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+.nav_changes, .ul_changes, .li_changes{
+    margin: 0 15px; 
+}
+
+.nav_changes, .ul_changes, .li_changes, .a_changes {
+    color: $colorprimario;
+    text-decoration: none;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.nav_changes, .ul_changes, .li_changes, .a_changes:hover {
+    color: $colorterciario;
+    border-radius: 4px; 
+}
+
+.navbar a:focus,
+.navbar a:active{
+    color: $colorterciario;
+}
+
+.navbar-toggler{
+    background-color: $colorprimario;
+}
+
+body {
+    background-color: $colorsecundario;
+    background-size: cover;
+    background-position: center;
+    background-position: no-repeat;
+    background-attachment: fixed;
+}
+
+section {
+    color: white;
+    font-family: $mifuente;
+    font-weight: 400;
+    font-style: normal;
+    margin: 10px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.section-galeria {
+    margin: 0;
+}
+
+.tituloGaleria {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0;
+    background-color: rgba(255, 102, 0, 0.489);
+}
+.divTrailers {
+    display: flex;
+    justify-content: center;
+}
+
+.trailers {
+    display: flex;
+    justify-content: center;
+    width: 720px;
+    height: 405px;
+}
+
+iframe {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.bordesGaleria {
+    border-style: groove;
+    border-color: $colorsecundario;
+    padding: 20px;
+}
+
+.h3-galeria{
+    margin: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.divFooter {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footerSection {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footerSection h4 {
+    margin-bottom: 10px;
+}
+
+.footerSection a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.footerSection p {
+    margin: 5px 0;
+}
+
+.tituloInicio {
+    display: flex;
+    justify-content: center;
+}
+
+.gridArea {
+    display: grid;
+    grid-template-areas: 
+        "intro intro-img"
+        "about-img about"
+        "conclusion conclusion-img";
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.grid-container div {
+    padding: 10px;
+}
+
+.intro {
+    grid-area: intro;
+}
+
+.intro-img {
+    grid-area: intro-img;
+    text-align: center;
+}
+
+.about {
+    grid-area: about;
+}
+
+.about-img {
+    grid-area: about-img;
+    text-align: center;
+}
+
+.conclusion {
+    grid-area: conclusion;
+}
+
+.conclusion-img {
+    grid-area: conclusion-img;
+    text-align: center;
+}
+
+.gridArea img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.gridArea p {
+    margin-top: 0;
+}
+
+.section-historia{
+    margin: 0;
+}
+
+.contenedorHistoria{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.bloque {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+.tituloHistoria{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0;
+    background-color: rgba(255, 102, 0, 0.489);
+}
+
+.textoHistoria{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 2;
+    font-size: 1.2em;
+    line-height: 1.4;
+}
+
+.imgHistoria{
+    flex: 1;
+    align-self: center;
+    max-width: 300px;
+}
+
+.imgHistoria img{
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.premiosGow{
+    margin: 20px;
+}
+
+@media only screen and (max-width: 599px) and (min-width: 320px) {
+
+    html {
+        width: fit-content;
+    }
+    
+    body {
+        font-size: 14px;
+    }
+
+    .nav_changes, .ul_changes, .li_changes{
+        margin: 0; 
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+    header {
+        background-image: none;
+        background-color: #1b1b1b;
+        padding: 0;
+    } 
+    .logoTitulo {
+        margin: 0;
+    }
+    .gridArea {
+        display: grid;
+        grid-template-areas: 
+            "intro" 
+            "intro-img"
+            "about"
+            "about-img"        
+            "conclusion"
+            "conclusion-img";
+    }
+
+    .bloque {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .imgHistoria {
+        margin-bottom: 15px;
+    }
+
+    .trailers {
+        width: 270px;
+        height: 150px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    
+    body {
+        font-size: 14px;
+    }
+    
+    header {
+        background-image: none;
+        background-color: #1b1b1b;
+        padding: 0;
+    }
+
+    .navbar .container-fluid {
+        justify-content: flex-end;
+    }
+
+    .navbar-collapse{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-end;
+    }
+
+    .bloque {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .imgHistoria {
+        margin-bottom: 15px;
+    }
+
+    .trailers {
+        width: 570px;
+        height: 320px;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1024px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        background-image: url(../assets/img/encabezadoGodOfWar-1024.png);
+    }
+}
+
+.contenedorCarousel{
+    display: flex;
+    justify-content: center;
+}
