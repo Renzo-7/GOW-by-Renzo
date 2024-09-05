@@ -1,0 +1,99 @@
+@media only screen and (max-width: 599px) and (min-width: 320px) {
+
+    html {
+        width: fit-content;
+    }
+    
+    body {
+        font-size: 14px;
+    }
+
+    .nav_changes, .ul_changes, .li_changes{
+        margin: 0; 
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+    header {
+        background-image: none;
+        background-color: #1b1b1b;
+        padding: 0;
+    } 
+    .logoTitulo {
+        margin: 0;
+    }
+    .gridArea {
+        display: grid;
+        grid-template-areas: 
+            "intro" 
+            "intro-img"
+            "about"
+            "about-img"        
+            "conclusion"
+            "conclusion-img";
+    }
+
+    .bloque {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .imgHistoria {
+        margin-bottom: 15px;
+    }
+
+    .trailers {
+        @include sizes(270px, 150px);                     
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    
+    body {
+        font-size: 14px;
+    }
+    
+    header {
+        background-image: none;
+        background-color: #1b1b1b;
+        padding: 0;
+    }
+
+    .navbar .container-fluid {
+        justify-content: flex-end;
+    }
+
+    .navbar-collapse{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-end;
+    }
+
+    .bloque {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .imgHistoria {
+        margin-bottom: 15px;
+    }
+
+    .trailers {
+        @include sizes(570px, 320px)
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1024px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        background-image: url(../assets/img/encabezadoGodOfWar-1024.png);
+    }
+}

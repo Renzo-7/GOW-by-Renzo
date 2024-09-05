@@ -5,6 +5,24 @@ body, html {
   width: 100%;
 }
 
+body {
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  background-position: no-repeat;
+  background-attachment: fixed;
+}
+
+section {
+  color: white;
+  font-family: "GFS Neohellenic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 10px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
 body, ul {
   margin: 0;
   padding: 0;
@@ -83,22 +101,38 @@ ul {
   background-color: red;
 }
 
-body {
-  background-color: black;
-  background-size: cover;
-  background-position: center;
-  background-position: no-repeat;
-  background-attachment: fixed;
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  margin-top: 20px;
 }
 
-section {
-  color: white;
-  font-family: "GFS Neohellenic", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  margin: 10px;
-  font-size: 20px;
-  line-height: 1.5;
+.divFooter {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footerSection {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.footerSection h4 {
+  margin-bottom: 10px;
+}
+
+.footerSection a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.footerSection p {
+  margin: 5px 0;
 }
 
 .section-galeria {
@@ -141,38 +175,9 @@ iframe {
   margin: 20px;
 }
 
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px 0;
-  margin-top: 20px;
-}
-
-.divFooter {
+.contenedorCarousel {
   display: flex;
-  justify-content: space-around;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.footerSection {
-  flex: 1;
-  padding: 0 20px;
-}
-
-.footerSection h4 {
-  margin-bottom: 10px;
-}
-
-.footerSection a {
-  color: #fff;
-  text-decoration: none;
-  display: block;
-  margin-bottom: 5px;
-}
-
-.footerSection p {
-  margin: 5px 0;
+  justify-content: center;
 }
 
 .tituloInicio {
@@ -279,6 +284,26 @@ footer {
   margin: 20px;
 }
 
+.textoSantaMonica {
+  font-size: 1.2em;
+  line-height: 1.4;
+}
+
+.h2-SantaMonica {
+  display: flex;
+  justify-content: center;
+  color: #fb9851;
+}
+
+.btn-primary {
+  background-color: red;
+  border-color: black;
+}
+
+.btn-primary:hover {
+  background-color: #fb9851;
+}
+
 @media only screen and (max-width: 599px) and (min-width: 320px) {
   html {
     width: fit-content;
@@ -356,10 +381,6 @@ footer {
   header {
     background-image: url(../assets/img/encabezadoGodOfWar-1024.png);
   }
-}
-.contenedorCarousel {
-  display: flex;
-  justify-content: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

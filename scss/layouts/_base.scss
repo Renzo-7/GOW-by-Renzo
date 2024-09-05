@@ -1,0 +1,34 @@
+$colorprimario: red;
+$colorsecundario: black;
+$colorterciario: #fb9851;
+$mifuente: "GFS Neohellenic", sans-serif;
+
+@mixin sizes($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: $colorsecundario;
+    background-size: cover;
+    background-position: center;
+    background-position: no-repeat;
+    background-attachment: fixed;
+}
+
+section {
+    color: white;
+    font-family: $mifuente;
+    font-weight: 400;
+    font-style: normal;
+    margin: 10px;
+    font-size: 20px;
+    line-height: 1.5;
+}

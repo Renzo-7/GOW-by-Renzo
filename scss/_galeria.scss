@@ -1,0 +1,42 @@
+.section-galeria {
+    margin: 0;
+}
+
+.tituloGaleria {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0;
+    background-color: rgba(255, 102, 0, 0.489);
+}
+.divTrailers {
+    display: flex;
+    justify-content: center;
+}
+
+.trailers {
+    display: flex;
+    justify-content: center;
+    @include sizes(720px, 405px);
+}
+
+iframe {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.bordesGaleria {
+    border-style: groove;
+    border-color: $colorsecundario;
+    padding: 20px;
+}
+
+.h3-galeria{
+    margin: 20px;
+}
+
+.contenedorCarousel{
+    display: flex;
+    justify-content: center;
+}

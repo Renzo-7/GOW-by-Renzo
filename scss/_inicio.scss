@@ -1,0 +1,57 @@
+.tituloInicio {
+    display: flex;
+    justify-content: center;
+}
+
+.gridArea {
+    display: grid;
+    grid-template-areas: 
+        "intro intro-img"
+        "about-img about"
+        "conclusion conclusion-img";
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.grid-container div {
+    padding: 10px;
+}
+
+.intro {
+    grid-area: intro;
+}
+
+.intro-img {
+    grid-area: intro-img;
+    text-align: center;
+}
+
+.about {
+    grid-area: about;
+}
+
+.about-img {
+    grid-area: about-img;
+    text-align: center;
+}
+
+.conclusion {
+    grid-area: conclusion;
+}
+
+.conclusion-img {
+    grid-area: conclusion-img;
+    text-align: center;
+}
+
+.gridArea img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.gridArea p {
+    margin-top: 0;
+}

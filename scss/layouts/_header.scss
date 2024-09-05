@@ -1,0 +1,77 @@
+body, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-image: url(../assets/img/encabezadoGodOfWar.png);
+    padding: 10px 20px;
+}
+
+.logoTitulo {
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+    align-items: center;
+}
+
+.logo img {
+    height: 70px;
+    margin-right: 10px;
+}
+
+h1 {
+    color: $colorprimario;
+    font-family: $mifuente;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 3em;
+    margin: 0;
+}
+
+.nav_changes {
+    flex-grow: 1; 
+}
+
+ul {
+    display: contents !important;
+}
+
+.nav_changes, .ul_changes {
+    list-style: none;
+    font-family: $mifuente;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 1.1em;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+.nav_changes, .ul_changes, .li_changes{
+    margin: 0 15px; 
+}
+
+.nav_changes, .ul_changes, .li_changes, .a_changes {
+    color: $colorprimario;
+    text-decoration: none;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.nav_changes, .ul_changes, .li_changes, .a_changes:hover {
+    color: $colorterciario;
+    border-radius: 4px; 
+}
+
+.navbar a:focus,
+.navbar a:active{
+    color: $colorterciario;
+}
+
+.navbar-toggler{
+    background-color: $colorprimario;
+}

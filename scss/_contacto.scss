@@ -1,0 +1,8 @@
+.btn-primary{
+    background-color: $colorprimario;
+    border-color: $colorsecundario;
+}
+
+.btn-primary:hover {
+    background-color: $colorterciario;
+}

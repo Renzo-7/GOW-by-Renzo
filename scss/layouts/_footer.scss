@@ -1,0 +1,33 @@
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.divFooter {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footerSection {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footerSection h4 {
+    margin-bottom: 10px;
+}
+
+.footerSection a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.footerSection p {
+    margin: 5px 0;
+}
