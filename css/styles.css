@@ -298,10 +298,19 @@ iframe {
 .btn-primary {
   background-color: red;
   border-color: black;
+  border: 2px solid black;
 }
 
 .btn-primary:hover {
   background-color: #fb9851;
+  color: white;
+  border: 2px solid #fb9851;
+}
+
+.btn-primary:active {
+  background-color: #fb9851 !important;
+  border: 2px solid black !important;
+  color: white;
 }
 
 @media only screen and (max-width: 599px) and (min-width: 320px) {

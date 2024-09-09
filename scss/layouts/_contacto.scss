@@ -1,8 +1,17 @@
 .btn-primary{
     background-color: $colorprimario;
     border-color: $colorsecundario;
+    border: 2px solid $colorsecundario;
 }
 
 .btn-primary:hover {
     background-color: $colorterciario;
+    color: white;
+    border: 2px solid $colorterciario;
+}
+
+.btn-primary:active {
+    background-color: $colorterciario !important;
+    border: 2px solid $colorsecundario !important;
+    color: white;
 }
