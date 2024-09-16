@@ -1,4 +1,11 @@
-@media only screen and (max-width: 599px) and (min-width: 320px) {
+@media only screen and (max-width: 599px) and (min-width: 319px) {
+    
+    html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
 
     html {
         width: fit-content;
@@ -13,7 +20,7 @@
     }
 
     img {
-        width: 100%;
+        max-width: 100%;
         height: auto;
     }
     header {
@@ -92,8 +99,201 @@
     body {
         font-size: 14px;
     }
-
     header {
         background-image: url(../assets/img/encabezadoGodOfWar-1024.png);
+        padding: 5px 15px;
+    }
+}
+
+@media only screen and (min-width: 1440px) and (max-width: 1440px) {
+    body {
+        font-size: 14px;
+    }
+    header {
+        background-image: url(../assets/img/encabezadoGodOfWar-1440.png);
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    header {
+        align-items: center;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+} 
+
+@media screen and (max-width: 420px) {
+    html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        width: fit-content;
+    }
+    
+    body {
+        font-size: 12px;
+    }
+
+    .nav_changes, .ul_changes, .li_changes{
+        margin: 0; 
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    header {
+        background-image: none;
+        background-color: #1b1b1b;
+        padding: 0;
+    } 
+    .logoTitulo {
+        margin: 0;
+    }
+    .gridArea {
+        display: grid;
+        grid-template-areas: 
+            "intro" 
+            "intro-img"
+            "about"
+            "about-img"        
+            "conclusion"
+            "conclusion-img";
+    }
+
+    .bloque {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .imgHistoria {
+        margin-bottom: 15px;
+    }
+
+    .trailers {
+        @include sizes(270px, 150px);                     
+    }
+}
+
+@media screen and (max-width: 370px) {
+    html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        width: fit-content;
+    }
+    
+    body {
+        font-size: 10px;
+    }
+
+    .nav_changes, .ul_changes, .li_changes{
+        margin: 0; 
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    header {
+        background-image: none;
+        background-color: #1b1b1b;
+        padding: 0;
+    } 
+    .logoTitulo {
+        margin: 0;
+    }
+    .gridArea {
+        display: grid;
+        grid-template-areas: 
+            "intro" 
+            "intro-img"
+            "about"
+            "about-img"        
+            "conclusion"
+            "conclusion-img";
+    }
+
+    .bloque {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .imgHistoria {
+        margin-bottom: 15px;
+    }
+
+    .trailers {
+        @include sizes(270px, 150px);                     
+    }
+}
+
+@media screen and (max-width: 350px) {
+    html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        width: fit-content;
+    }
+    
+    body {
+        font-size: 8px;
+    }
+
+    .nav_changes, .ul_changes, .li_changes{
+        margin: 0; 
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    header {
+        background-image: none;
+        background-color: #1b1b1b;
+        padding: 0;
+    } 
+    .logoTitulo {
+        margin: 0;
+    }
+    .gridArea {
+        display: grid;
+        grid-template-areas: 
+            "intro" 
+            "intro-img"
+            "about"
+            "about-img"        
+            "conclusion"
+            "conclusion-img";
+    }
+
+    .bloque {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .imgHistoria {
+        margin-bottom: 15px;
+    }
+
+    .trailers {
+        @include sizes(270px, 150px);                     
     }
 }

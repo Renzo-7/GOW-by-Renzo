@@ -7,8 +7,9 @@ body, ul {
 header {
     display: flex;
     align-items: center;
-    background-image: url(../assets/img/encabezadoGodOfWar.png);
     padding: 10px 20px;
+    background-image: url(../assets/img/encabezadoGodOfWar-1519.png);
+    background-repeat: no-repeat;
 }
 
 .logoTitulo {
@@ -74,4 +75,9 @@ ul {
 
 .navbar-toggler{
     background-color: $colorprimario;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
