@@ -32,8 +32,8 @@ body, ul {
 header {
   display: flex;
   align-items: center;
-  padding: 10px 20px;
-  background-image: url(../assets/img/encabezadoGodOfWar-1519.png);
+  padding: 10px 30px;
+  background-image: url(../assets/img/encabezado-gow-1519.png);
   background-repeat: no-repeat;
 }
 
@@ -179,6 +179,8 @@ iframe {
 
 .h3-galeria {
   margin: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .contenedorCarousel {
@@ -319,6 +321,31 @@ iframe {
   color: white;
 }
 
+.footer-end {
+  height: 211px;
+}
+
+.contacto-contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  margin-top: 100px;
+}
+
+.contacto-formulario, .contacto-mapa {
+  flex: 1;
+}
+
+.contacto-mapa iframe {
+  width: 100%;
+  height: 400px;
+  border: none;
+}
+
 @media only screen and (max-width: 599px) and (min-width: 319px) {
   html, body {
     width: 100%;
@@ -363,6 +390,9 @@ iframe {
     width: 270px;
     height: 150px;
   }
+  .contacto-contenedor {
+    flex-direction: column;
+  }
 }
 @media only screen and (min-width: 600px) and (max-width: 768px) {
   body {
@@ -394,13 +424,16 @@ iframe {
     width: 570px;
     height: 320px;
   }
+  .contacto-contenedor {
+    flex-direction: column;
+  }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1024px) {
   body {
     font-size: 14px;
   }
   header {
-    background-image: url(../assets/img/encabezadoGodOfWar-1024.png);
+    background-image: url(../assets/img/encabezado-gow-1024.png);
     padding: 5px 15px;
   }
 }
@@ -409,7 +442,7 @@ iframe {
     font-size: 14px;
   }
   header {
-    background-image: url(../assets/img/encabezadoGodOfWar-1440.png);
+    background-image: url(../assets/img/encabezado-gow-1440.png);
   }
 }
 @media only screen and (min-width: 1600px) {
@@ -465,6 +498,9 @@ iframe {
     width: 270px;
     height: 150px;
   }
+  .contacto-contenedor {
+    flex-direction: column;
+  }
 }
 @media screen and (max-width: 370px) {
   html, body {
@@ -510,6 +546,9 @@ iframe {
     width: 270px;
     height: 150px;
   }
+  .contacto-contenedor {
+    flex-direction: column;
+  }
 }
 @media screen and (max-width: 350px) {
   html, body {
@@ -554,6 +593,9 @@ iframe {
   .trailers {
     width: 270px;
     height: 150px;
+  }
+  .contacto-contenedor {
+    flex-direction: column;
   }
 }
 
